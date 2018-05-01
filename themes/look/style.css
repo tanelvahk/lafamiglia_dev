@@ -329,7 +329,7 @@ figure.aligncenter {
 .screen-reader-text {}
 /* --------------- 1.3 TYPOGRAHPY --------------- */
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-family: 'Oswald','Montserrat', Arial, Helvetica, sans-serif;
 }
 /* ==================== 2.0 GENERAL LAYOUT ==================== */
 body {
@@ -917,7 +917,7 @@ body.open .push-menu {
 	padding: 0;
 	border: 0;
 	list-style: none;
-	line-height: 5px;
+	line-height: 7px;
 	display: block;
 	position: relative;
 	text-align: center;
@@ -925,6 +925,10 @@ body.open .push-menu {
 #mobile-menu {
 	width: 250px;
 }
+#menu-primary-menu ul li > * {
+    line-height: 5px !important;
+}
+
 #mobile-menu ul ul {
 	display: none;
 	padding: 10px 0;
@@ -945,14 +949,16 @@ body.open .push-menu {
 	transform: translateX(0);
 }
 #mobile-menu > ul > li > a {
+	font-family: 'Oswald', sans-serif;
 	padding: 15px 20px;
 	cursor: pointer;
 	z-index: 2;
 	text-decoration: none;
 	color: #00205b;
-	font-size: 16px;
-	text-transform: lowercase;
-	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
 }
 #mobile-menu > ul > li > a:before {
 	display: none;
@@ -968,14 +974,14 @@ body.open .push-menu {
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	top: 8px;
+	top: 3px;
 	right: 5px;
 	z-index: 10;
 	cursor: pointer;
 	color: #00205b;
 }
 #mobile-menu ul li ul li .holder {
-	top: 7px;
+	top: -5px;
 }
 #mobile-menu > ul > li:hover > .holder, 
 #mobile-menu > ul > li.current-menu-item > .holder,
@@ -988,8 +994,8 @@ body.open .push-menu {
 	display: block;
 	position: absolute;
 	content: "";
-	width: 17px;
-	height: 17px;
+	width: 14px;
+	height: 14px;
 	right: 6px;
 	z-index: 10;
 	-webkit-transform: rotate(-90deg);
@@ -999,17 +1005,17 @@ body.open .push-menu {
 	transform: rotate(-90deg);
 }
 .holder::after {
-	top: 6px;
-	right: 14px;
-	border-top: 1px solid;
-	border-left: 1px solid;
+	top: 8px;
+	right: 12px;
+	border-top: 2px solid;
+	border-left: 2px solid;
 	width: 1px;
 }
 .holder::before {
 	top: 14px;
 	height: 1px;
-	border-top: 1px solid;
-	border-left: 1px solid;
+	border-top: 2px solid;
+	border-left: 2px solid;
 	border-top-color: inherit;
 	border-left-color: inherit;
 	-webkit-transition: all .3s;
@@ -1026,13 +1032,18 @@ nav.main-menu #mobile-menu ul ul:after {
 	display: none;
 }
 #mobile-menu ul ul li a {
+	font-family: 'Oswald', sans-serif;
 	cursor: pointer;
 	padding: 10px 20px 10px;
 	z-index: 1;
 	text-decoration: none;
 	color: #00205b;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	font-weight: normal;
+}
+#mobile-menu ul ul ul li a {
+	font-size: 11px;
+	line-height: 0px !important;
 }
 #mobile-menu ul ul li:hover > a,
 #mobile-menu ul ul li.current-menu-item a,
@@ -1169,9 +1180,9 @@ nav.main-menu #mobile-menu ul ul:after {
 	bottom: 35px;
 	z-index: 999;
 }
-.caption-wrap:hover .gradient-background {
+/* .caption-wrap:hover .gradient-background {
 	background-color: rgba(255,255,255,.3);
-}
+} */
 .caption-wrap:hover .intro-text a {
 	transform: rotate3D(0,0,0,0);
 	-moz-transform: rotate3D(0,0,0,0);
@@ -1240,7 +1251,7 @@ h2.module-title {
 	padding: 0 10px;
 	display: inline-block;
 	color: #333;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 .entry-content.static-content h2.module-title {
 	margin-top: 50px;
@@ -1277,7 +1288,6 @@ h2.module-title {
 #footer a {
 	color: #001438;
 	line-height: 24px;
-	text-transform: lowercase;
 }
 #footer a:hover {
 	color: #00205b;
@@ -1565,7 +1575,7 @@ form.mc4wp-form .newsletter-signup input.submit-btn:hover {
 }
 .section-background .intro-text h1 {
 	font-size: 46px;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	letter-spacing: 4px;
 }
 .theGrid .grid.row {
@@ -1784,7 +1794,7 @@ h3.category-name {
 .item-info h2,
 .entry-content.static-content .item-info h2 {
 	font-size: 1em;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	margin: 5px 0 0;
 	letter-spacing: .2em;
 	font-weight: 400;
@@ -2494,7 +2504,7 @@ ul.swatch li.selected {
 .variations .value a {
 	color: #999;
 	font-size: 12px;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	float: right;
 	line-height: 28px;
 }
@@ -4342,7 +4352,7 @@ span.rss-date {
 .terms h3 {
 	font-size: 18px;
 	font-weight: 400;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	margin-bottom: 15px;
 	margin-top: 50px;
 }
@@ -4972,8 +4982,25 @@ a.add_to_wishlist:hover:after {
 
 /* La Famiglia Custom CSS */
 
+h1.page-title.hero-page-title {
+    text-transform: uppercase;
+}
+
+/* Metaslider */ 
+
+.metaslider .flex-control-nav{
+	bottom: 20px !important;
+}
+.flex-control-paging li a{
+	background: rgba(0,35,103,.2) !important;
+}
+.flex-control-paging li a.flex-active{
+	background: rgba(0,35,103,.7) !important;
+}
+.hero-banner .flex-control-paging li a
 .hero-page-title{
-	border-bottom: 1px solid;
+	text-transform: uppercase;
+	border-bottom: 1px solid #00205b;
     padding-bottom: 20px;
     width: 40%;
     margin: 0 auto;
@@ -4982,9 +5009,9 @@ a.add_to_wishlist:hover:after {
 }
 
 h3.widget-title {
-    text-transform: lowercase !important;
+    text-transform: uppercase !important;
 	font-weight: 600 !important;
-	font-size:16px !important;
+	font-size: 16px !important;
 }
 
 .lf-collecitons li {
@@ -5018,4 +5045,25 @@ h3.widget-title {
 	line-height: 2.4;
 	color: #00205b;
 	padding: 20px;
+}
+
+.lf-shop-now{
+	text-transform: uppercase;
+    border-bottom: 1px solid #00205b;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Gallery pages */
+
+[id^="bwg_container"]{
+	display: none;
+}
+
+.lf-background-image{
+    max-height: 700px;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
 }

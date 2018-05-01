@@ -278,6 +278,18 @@ var $ = jQuery.noConflict();
                 $('input[name="max_price"]').remove();
             }
         });
-
 	});
 } )( jQuery );
+
+
+function showGallery(id){
+    console.log("here");
+    var gallery = $(".bwp_gallery");
+    var choosenGallery = gallery[0];
+
+    if(id){
+        choosenGallery = gallery[id];
+    }
+    var galleryClick = $("#" + choosenGallery.id +  " [class*='bwg_lightbox']");
+    galleryClick.click();
+}
