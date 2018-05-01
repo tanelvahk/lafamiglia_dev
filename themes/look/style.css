@@ -4983,7 +4983,8 @@ a.add_to_wishlist:hover:after {
 /* La Famiglia Custom CSS */
 
 h1.page-title.hero-page-title {
-    text-transform: uppercase;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
 /* Metaslider */ 
@@ -5056,6 +5057,10 @@ h3.widget-title {
 }
 
 /* Gallery pages */
+
+.lf-gallery [id^="bwg_container"]{
+	display: block;
+}
 
 [id^="bwg_container"]{
 	display: none;

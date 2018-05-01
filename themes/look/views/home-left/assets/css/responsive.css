@@ -327,7 +327,7 @@
 	}
 	/* HOME SLIDER */
 	.hero-banner .intro-text {
-		top: 40%;
+		top: 30%;
 		-webkit-transform: translateY(-40%);
 		-moz-transform: translateY(-40%);
 		-ms-transform: translateY(-40%);
@@ -684,6 +684,9 @@
 	.hero-banner .intro-text h3 {
 		font-size: 20px !important;
 	}
+	.intro-text h3{
+		font-size: 20px !important;
+	}
 	.sortby form,
 	.sortby .dropdown-select {
 		width: 100%;
@@ -737,6 +740,9 @@
 	}
 	/* HOME SLIDER */
 	.hero-banner .intro-text h2 {
+		font-size: 30px !important;
+	}
+	.intro-text h2 {
 		font-size: 30px !important;
 	}
 	.hero-banner .intro-text h3 {
@@ -844,8 +850,18 @@
 	.hero-banner .intro-text h3 {
 		font-size: 18px !important;
 	}
+	.intro-text h3 {
+		font-size: 18px !important;
+		line-height: 1.3;
+	}
 	.hero-banner .intro-text h2 {
 		font-size: 24px !important;
+	}
+	.lf-shop-now{
+		font-size: 12px !important;
+	}
+	.hero-banner .intro-text{
+		top: 23%;
 	}
 	.hero-banner .metaslider .caption-wrap .intro-text a {
 		padding: 6px 12px 6px 18px;
