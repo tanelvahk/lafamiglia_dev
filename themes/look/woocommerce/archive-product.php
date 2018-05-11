@@ -191,7 +191,17 @@ get_header( 'shop' ); ?>
 					<?php wc_get_template( 'loop/no-products-found.php' ); ?>
 
 				<?php endif; ?>
-
+				<?php 
+					global $wp;
+					$current_url = home_url(add_query_arg(array(),$wp->request));
+					$site_url = get_site_url() . "/shop";
+				?>
+				<?php if (strcmp($current_url,$site_url)) : ?>
+					
+					<div class="wp-category-btn">
+        				<a href="/shop">ALL PRODUCTS</a>
+					</div>
+				<?php endif; ?>
 				<?php
 					/**
 					 * woocommerce_after_main_content hook
@@ -204,5 +214,4 @@ get_header( 'shop' ); ?>
 		</div>
 	</div>
 <?php endif; ?>
-
 <?php get_footer( 'shop' ); ?>

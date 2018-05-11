@@ -970,6 +970,10 @@ body.open .push-menu {
 #mobile-menu > ul > li.current-menu-ancestor > a {
 	text-decoration: underline;
 }
+#mobile-menu ul li a:hover {
+	opacity: 0.7; 
+	text-decoration: none;
+}
 .holder {
 	width: 30px;
 	height: 30px;
@@ -2170,7 +2174,7 @@ div.product-page p.price ins,
 	text-overflow: ellipsis;
 	margin: 0 0 5px;
 	letter-spacing: 2px;
-	font-weight: bold;
+	font-weight: 400;
 }
 .product-info p {
 	margin: 5px 0;
@@ -3615,6 +3619,7 @@ fieldset.change-password legend {
 .article-info .post-info a {
 	font-weight: bold;
 	color: #fff;
+	font-size: 24px;
 }
 .article-info .post-info h2.post-title {
 	font-size: 18px;
@@ -3730,7 +3735,7 @@ fieldset.change-password legend {
 	margin-top: 30px;
 }
 .item-detail h1 {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1.5;
@@ -4570,6 +4575,10 @@ a.add_to_wishlist:hover:after {
 	text-align: center;
 }
 .panel-grid .widget-title {
+	width: 100%;
+    min-height: 50px;
+	line-height: 1.5;
+    font-weight: 400 !important;
 	text-align: center;
 	color: #333;
 	display: inline-block;
@@ -4987,6 +4996,17 @@ h1.page-title.hero-page-title {
 	margin-bottom: 30px;
 }
 
+.bwg_close_btn{
+	font-size: 40px;
+}
+
+span.select2-selection.select2-selection--single{
+	position:  relative !important;
+}
+
+.widget.woocommerce.widget_shopping_cart{
+	margin-top: 30px;
+}
 /* Metaslider */ 
 
 .metaslider .flex-control-nav{
@@ -5042,8 +5062,9 @@ h3.widget-title {
 	padding:15px;
 }
 .lf-about-us p{
-	font-size:30px;
-	line-height: 2.4;
+	font-size:24px;
+	text-align: center;
+	line-height: 1.8;
 	color: #00205b;
 	padding: 20px;
 }
@@ -5071,4 +5092,36 @@ h3.widget-title {
     height: 700px;
     background-size: cover;
     background-position: center;
+}
+
+
+.lf-full-row video{
+	width: 100%;
+}
+
+.wp-category-btn{
+	text-align: center;
+    margin: 50px;
+}
+
+.wp-category-btn a {
+    background: #c5d6e2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 1.15em;
+    padding: 1.4em 2.8em;
+    background: #b7ccdb;
+    color: #ffffff !important;
+    border: 1px solid #b7ccdb;
+    border-width: 1px 0;
+    -webkit-border-radius: 0em;
+    -moz-border-radius: 0em;
+    border-radius: 0em;
+    border-bottom-color: #b4cad9;
+}
+
+.contact-info, .contact-social{
+	text-align: right;
 }

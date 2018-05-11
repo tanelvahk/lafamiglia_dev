@@ -24,7 +24,6 @@
                                     </div>
                                 <?php endif; ?>
                                 <div class="post-info">
-                                    <div class="post-meta"><?php _e('By','look'); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>" <?php look_schema_metadata( array( 'context' => 'author' ) ); ?>><?php echo get_the_author(); ?></a> <?php _e('in','look'); ?> <?php the_category(',') ?></div>
                                     <h2 class="post-title" itemprop="name"><a href="<?php the_permalink(); ?>" itemprop="url"><?php the_title(); ?></a></h2>
                                     <div class="article-post-date" <?php look_schema_metadata( array( 'context' => 'entry_time' ) ); ?>>
                                         <?php look_get_posted(); ?>

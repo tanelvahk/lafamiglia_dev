@@ -16,7 +16,6 @@
             <article class="<?php if(is_sticky()):?> sticky <?php endif; ?> item-detail post hentry" <?php look_schema_metadata( array( 'context' => 'entry' ) ); ?>>
                 <div class="article-info">
                     <div class="post-info">
-                        <div class="post-meta">By <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>" <?php look_schema_metadata( array( 'context' => 'author' ) ); ?>><?php echo get_the_author(); ?></a> in <?php the_category(',') ?></div>
                         <h1 class="post-title" itemprop="name"><?php the_title(); ?></h1>
                         <div class="article-post-date" <?php look_schema_metadata( array( 'context' => 'entry_time' ) ); ?>>
                             <?php look_get_posted(); ?>

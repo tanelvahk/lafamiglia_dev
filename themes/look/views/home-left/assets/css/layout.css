@@ -31,6 +31,9 @@ body.home-left-layout #sidebar {
 	overflow-y: auto;
 	bottom: 0;
 }
+body.home-left-layout #sidebar img{
+	width: 150px;
+}
 body.home-left-layout.admin-bar #sidebar {
 	top: 36px;
 }
@@ -39,7 +42,7 @@ body.home-left-layout #header {
 	height: auto;
 }
 body.home-left-layout .logo {
-	margin: 50px 0 10px;
+	margin: 50px 0 20px;
 }
 body.home-left-layout .logo a {
 	display: inline-block;
