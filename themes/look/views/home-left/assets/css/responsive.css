@@ -866,9 +866,9 @@
 	.lf-shop-now{
 		font-size: 12px !important;
 	}
-	/* .hero-banner .intro-text{
-		top: 23%;
-	} */
+	.hero-banner .intro-text{
+		top: 30%;
+	}
 	.hero-banner .metaslider .caption-wrap .intro-text a {
 		padding: 6px 12px 6px 18px;
 	}
