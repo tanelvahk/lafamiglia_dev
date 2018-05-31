@@ -2941,6 +2941,7 @@ ul.swatch li.selected {
 .woocommerce-page #content table.cart img,
 .woocommerce-page table.cart img {
 	width: auto;
+	max-height: 350px;
 }
 .woocommerce table.shop_table .product-name a {
 	font-size: 1.1em;
