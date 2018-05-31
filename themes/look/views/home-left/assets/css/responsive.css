@@ -678,14 +678,20 @@
 }
 @media only screen and (max-width: 568px) {
 	/* HOME SLIDER */
+	.hero-banner .intro-text{
+		top: 40%;
+	}
 	.hero-banner .intro-text h2 {
-		font-size: 36px !important;
+		font-size: 32px !important;
 	}
 	.hero-banner .intro-text h3 {
-		font-size: 20px !important;
+		font-size: 18px !important;
 	}
 	.intro-text h3{
-		font-size: 20px !important;
+		font-size: 18px !important;
+	}
+	.lf-shop-now {
+		font-size: 13px;
 	}
 	.sortby form,
 	.sortby .dropdown-select {
@@ -740,13 +746,13 @@
 	}
 	/* HOME SLIDER */
 	.hero-banner .intro-text h2 {
-		font-size: 30px !important;
+		font-size: 26px !important;
 	}
 	.intro-text h2 {
-		font-size: 30px !important;
+		font-size: 26px !important;
 	}
 	.hero-banner .intro-text h3 {
-		font-size: 18px !important;
+		font-size: 16px !important;
 	}
 	#searchModal .content-item {
 		max-width: 380px;
